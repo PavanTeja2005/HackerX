@@ -11,7 +11,7 @@ from llm_agent import answer_question_with_context
 app = FastAPI(title="HackRx API", version="1.0")
 
 # Simple auth: expect Bearer token in Authorization header
-API_KEY = "bearer"
+API_KEY = os.getenv("HACKRX_API_KEY", "default_api_key")  # Set a default for local testing
 
 class RunRequest(BaseModel):
     documents: str | list
