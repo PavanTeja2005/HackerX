@@ -7,11 +7,14 @@ from pydantic import BaseModel
 from extractor import download_and_extract_text
 from retriever import chunk_and_build_index, retrieve_topk_for_question
 from llm_agent import answer_question_with_context
+from dotenv import load_dotenv
+
+load_dotenv() # This loads the variables from .env
 
 app = FastAPI(title="HackRx API", version="1.0")
 
 # Simple auth: expect Bearer token in Authorization header
-API_KEY = os.getenv("HACKRX_API_KEY", "default_api_key")  # Set a default for local testing
+API_KEY = os.getenv("bearer")  # Set a default for local testing
 
 class RunRequest(BaseModel):
     documents: str | list

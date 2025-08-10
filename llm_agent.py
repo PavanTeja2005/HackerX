@@ -1,8 +1,11 @@
 # llm_agent.py
 import os
 from groq import Groq
+from dotenv import load_dotenv
 
-API_KEY = os.getenv("GROQ_API_KEY")
+load_dotenv() # This loads the variables from .env
+
+API_KEY = os.getenv("GROQ")
 MODEL = "llama-3.3-70b-versatile"
 
 ANSWER_PROMPT = """

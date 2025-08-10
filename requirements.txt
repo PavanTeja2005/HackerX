@@ -16,3 +16,4 @@ python-magic
 beautifulsoup4
 requests
 pandas
+python-dotenv
