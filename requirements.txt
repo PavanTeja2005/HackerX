@@ -9,3 +9,10 @@ python-multipart
 openai
 tqdm
 python-dotenv
+groq
+numpy
+bs4
+python-magic
+beautifulsoup4
+requests
+pandas
