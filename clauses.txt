@@ -1,3 +1,0 @@
-policy.pdf_p18_c0 score = 0.591
-policy.pdf_p21_c0 score = 0.564
-policy.pdf_p1_c0 score = 0.521
